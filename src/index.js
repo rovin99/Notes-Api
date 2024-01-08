@@ -1,4 +1,5 @@
 const express = require('express');
+const rateLimit = require('express-rate-limit');
 const { ServerConfig, Logger } = require('./config');
 const connect = require('./config/db');
 
@@ -7,12 +8,22 @@ const app = express();
 const cors = require('cors');
 const corsOrigin = "*";
 
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, 
+});
+
 app.use(cors({
   origin: corsOrigin,
   allowedHeaders: '*',
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Apply the rate limiter to all requests
+app.use(limiter);
+
 app.use('/api', apiRoutes);
 
 const startServer = async () => {
