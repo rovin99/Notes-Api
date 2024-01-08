@@ -1,0 +1,12 @@
+2024-01-05 08:59:20 : error: Error in create method: Cannot read properties of undefined (reading 'create')
+2024-01-05 09:05:03 : error: Error in create method: Cannot read properties of undefined (reading 'create')
+2024-01-05 09:08:47 : error: Error in create method: Cannot read properties of undefined (reading 'create')
+2024-01-05 09:10:37 : error: Error in create method: this.model is not a function
+2024-01-05 09:11:58 : error: Error in create method: model is not defined
+2024-01-05 09:23:12 : error: Error in create method: this.model is not a function
+2024-01-05 09:28:43 : error: Error in create method: Cannot read properties of undefined (reading 'model')
+2024-01-05 09:29:53 : error: Error in create method: Cannot read properties of undefined (reading 'create')
+2024-01-05 09:32:52 : error: Error in create method: Cannot read properties of undefined (reading 'create')
+2024-01-05 09:35:22 : error: Error in create method: db already exists with different case already have: [notesDb] trying to create [notesDB]
+2024-01-05 10:41:49 : error: Error in create method: Note validation failed: ownerId: Cast to ObjectId failed for value "0" (type string) at path "ownerId" because of "BSONError"
+2024-01-05 10:42:14 : error: Error in create method: Note validation failed: ownerId: Cast to ObjectId failed for value "1" (type string) at path "ownerId" because of "BSONError"
